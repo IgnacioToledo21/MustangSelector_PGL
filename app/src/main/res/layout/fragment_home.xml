@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Cabecera personalizada -->
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mustang Selector"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/header_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encuentra tu Mustang ideal"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/header_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descubre nuestra selección de modelos y escoge el que mejor se adapte a ti."
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- Carrusel de imágenes -->
+    <ImageView
+        android:id="@+id/image_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/header_layout"
+        android:contentDescription="@string/mustang_image" />
+
+    <!-- Contenedor para los botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp">
+
+        <!-- Botón Salir -->
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir" />
+
+        <!-- Botón Acerca de -->
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Acerca de" />
+
+        <!-- Botón Preferencias -->
+        <Button
+            android:id="@+id/preferences_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferencias"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</RelativeLayout>
