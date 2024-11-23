@@ -12,4 +12,8 @@
     <string name="menu_configurator">Configurator</string>
     <string name="menu_models">Models</string>
     <string name="menu_shoppingcart">Shopping Cart</string>
+
+    <!--Models-->
+    <string name="image_desc">Descripción de la imagen</string>
+    <string name="model_image">Modelo de la imagen</string>
 </resources>
