@@ -29,6 +29,7 @@ class ModelsAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(model: Model) {
+
             // Configurar datos en la vista
             binding.imageModel.setImageResource(model.imageResId)
             binding.textTitle.text = model.title
@@ -41,9 +42,11 @@ class ModelsAdapter(
                     putExtra("IMAGE_RES_ID", model.imageResId)
                     putExtra("DESCRIPTION", model.description)
                     putExtra("PRICE", model.price)
+                    putExtra("CHARACTERISTICS", model.characteristics) // Pasar directamente las características
                 }
                 context.startActivity(intent)
             }
+
         }
     }
 }

@@ -23,10 +23,4 @@
         android:label="@string/menu_configurator"
         tools:layout="@layout/fragment_configurator" />
 
-    <fragment
-        android:id="@+id/nav_shoppingcart"
-        android:name="com.example.eaut2_06_proyectoandroidmustangselector.ui.shoppingcart.ShoppingCartFragment"
-        android:label="@string/menu_shoppingcart"
-        tools:layout="@layout/fragment_configurator" />
-
 </navigation>

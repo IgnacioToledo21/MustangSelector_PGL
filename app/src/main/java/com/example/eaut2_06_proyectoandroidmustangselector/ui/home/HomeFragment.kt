@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.eaut2_06_proyectoandroidmustangselector.R
 import com.example.eaut2_06_proyectoandroidmustangselector.databinding.FragmentHomeBinding
+
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null

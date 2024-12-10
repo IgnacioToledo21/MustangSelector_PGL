@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -10,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Title"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/image_model"
@@ -26,11 +28,41 @@
         android:text="Description"
         android:textSize="16sp" />
 
+    <!-- Nuevo título secundario -->
     <TextView
         android:id="@+id/textPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="Price"
         android:textSize="16sp" />
-</LinearLayout>
 
+    <TextView
+        android:id="@+id/textCharacteristicsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Características"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Nueva descripción -->
+    <TextView
+        android:id="@+id/textCharacteristicsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aquí se describen las características adicionales del modelo."
+        android:textSize="16sp" />
+
+    <!-- Botón de Comprar centrado -->
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comprar"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:textSize="18sp"
+        />
+</LinearLayout>

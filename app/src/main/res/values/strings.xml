@@ -1,19 +1,22 @@
 <resources>
-    <string name="app_name">EAUT2_06_ProyectoAndroidMustangSelector</string>
+    <string name="app_name">ProyectoAndroidMustangSelector</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Menú Principal</string>
+    <string name="nav_header_subtitle">Opciones disponibles</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="mustang_image">Mustang Image</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_configurator">Configurator</string>
-    <string name="menu_models">Models</string>
-    <string name="menu_shoppingcart">Shopping Cart</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_configurator">Reservas</string>
+    <string name="menu_models">Modelos</string>
 
     <!--Models-->
     <string name="image_desc">Descripción de la imagen</string>
     <string name="model_image">Modelo de la imagen</string>
+
+    <!--Reservations -->
+    <string name="reservation_icon">Icono de reserva</string>
+
 </resources>

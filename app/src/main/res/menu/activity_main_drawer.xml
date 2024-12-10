@@ -16,9 +16,5 @@
             android:id="@+id/nav_configurator"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_configurator" />
-        <item
-            android:id="@+id/nav_shoppingcart"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_shoppingcart" />
     </group>
 </menu>

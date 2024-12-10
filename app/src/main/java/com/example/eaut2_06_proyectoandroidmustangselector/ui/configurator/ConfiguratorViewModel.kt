@@ -6,8 +6,15 @@ import androidx.lifecycle.ViewModel
 
 class ConfiguratorViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is Configurator Fragment"
+    private val _reservations = MutableLiveData<List<Reservas>>(emptyList())
+    val reservations: LiveData<List<Reservas>> = _reservations
+
+    fun addReservas(reservation: Reservas) {
+        val updatedList = _reservations.value.orEmpty().toMutableList()
+        if (!updatedList.contains(reservation)) {
+            updatedList.add(reservation)
+            _reservations.value = updatedList
+        }
     }
-    val text: LiveData<String> = _text
+
 }
